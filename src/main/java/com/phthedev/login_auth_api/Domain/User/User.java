@@ -6,13 +6,12 @@ import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 
-@Table(name = "users")
 @Entity
+@Table(name = "users")
 @Getter
 @Setter
 @AllArgsConstructor
 @NoArgsConstructor
-
 public class User {
     @Id
     @GeneratedValue(strategy = GenerationType.UUID)
